@@ -23,5 +23,5 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 # 7. Copy vim config
 cp -r vim/* ~/
 
-# 6. Copy iTerm preferences
+# 8. Copy iTerm preferences
 cp com.googlecode.iterm2.plist ~/Library/Preferences/
