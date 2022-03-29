@@ -17,5 +17,11 @@ chsh -s $(which zsh)
 # 5. Source .zshrc
 . ~/.zshrc
 
+# 6. Install vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# 7. Copy vim config
+cp -r vim/* ~/
+
 # 6. Copy iTerm preferences
 cp com.googlecode.iterm2.plist ~/Library/Preferences/
