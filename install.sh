@@ -6,7 +6,7 @@ git clone https://github.com/zdharma-continuum/fast-syntax-highlighting ${ZSH_CU
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 # 3. Copy theme to the oh-my-zsh theme directory
-cp solus.zsh-theme $ZSH_CUSTOM/themes/
+cp solus.zsh-theme ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/
 
 # 3. Copy over .zshrc
 cp zsh/.zshrc ~/
@@ -16,3 +16,6 @@ chsh -s $(which zsh)
 
 # 5. Source .zshrc
 . ~/.zshrc
+
+# 6. Copy iTerm preferences
+cp com.googlecode.iterm2.plist ~/Library/Preferences/
